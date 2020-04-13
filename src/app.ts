@@ -1,14 +1,16 @@
+import { Candidate } from "./services/donation-types";
+
 export class App {
   firstName: string;
   lastName: string;
   office: string;
-  candidates: any[] = [];
+  candidates: Candidate[] = [];
 
   addCandidate() {
     const candidate = {
       firstName: this.firstName,
       lastName: this.lastName,
-      office: this.office
+      office: this.office,
     };
     this.candidates.push(candidate);
     console.log(candidate);
