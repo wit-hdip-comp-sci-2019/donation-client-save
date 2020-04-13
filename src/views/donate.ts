@@ -1,9 +1,6 @@
-export class Donate {
-  amount = "0";
-  donations: number[] = [];
+import { Donation } from '../services/donation-types';
 
-  makeDonation() {
-    this.donations.push(parseInt(this.amount));
-    console.log(this.donations);
-  }
+export class Donate {
+  donations: Donation[] = [];
+  paymentMethods = ['Cash', 'Paypal'];
 }
