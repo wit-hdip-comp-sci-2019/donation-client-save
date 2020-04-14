@@ -7,4 +7,5 @@ export interface Candidate {
 export interface Donation {
   amount: number;
   method: string;
+  candidate: Candidate;
 }
